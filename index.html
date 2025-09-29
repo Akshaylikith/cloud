@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Grand Palace Hotel</h1>
+    <nav>
+      <ul>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Rooms Section -->
+  <section id="rooms">
+    <h2>Our Rooms</h2>
+    <div class="room-list">
+      <div class="room">
+        <h3>Deluxe Room</h3>
+        <p>Spacious room with king-size bed, free Wi-Fi, and balcony view.</p>
+        <span>$120 / night</span>
+      </div>
+      <div class="room">
+        <h3>Executive Suite</h3>
+        <p>Luxury suite with private lounge, complimentary breakfast, and pool access.</p>
+        <span>$250 / night</span>
+      </div>
+      <div class="room">
+        <h3>Standard Room</h3>
+        <p>Comfortable room with queen bed, Wi-Fi, and TV.</p>
+        <span>$90 / night</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking">
+    <h2>Book a Room</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="room">Choose Room:</label>
+      <select id="room" required>
+        <option value="">-- Select a Room --</option>
+        <option value="deluxe">Deluxe Room</option>
+        <option value="executive">Executive Suite</option>
+        <option value="standard">Standard Room</option>
+      </select>
+
+      <label for="checkin">Check-in Date:</label>
+      <input type="date" id="checkin" required>
+
+      <label for="checkout">Check-out Date:</label>
+      <input type="date" id="checkout" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <footer id="contact">
+    <p>📍 123 Beach Road, Goa, India</p>
+    <p>📞 +91 98765 43210</p>
+    <p>📧 info@grandpalace.com</p>
+  </footer>
+
+</body>
+</html>
